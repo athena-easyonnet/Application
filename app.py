@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 from statsmodels.tsa.arima.model import ARIMA
 
 
-locale.setlocale(locale.LC_ALL, 'en_US.utf-8')
+#locale.setlocale(locale.LC_ALL, 'en_US.utf-8')
 st.set_page_config(page_title="Athena", page_icon=":bar_chart:",layout="wide")
 
 

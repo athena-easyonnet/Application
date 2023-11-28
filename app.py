@@ -1,6 +1,6 @@
 import random
 import duckdb
-import locale-all
+import locale
 import pandas as pd
 import numpy as np
 import plotly.express as px

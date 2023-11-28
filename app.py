@@ -1,6 +1,5 @@
 import random
 import duckdb
-import locale
 import pandas as pd
 import numpy as np
 import plotly.express as px
@@ -15,7 +14,7 @@ import matplotlib.pyplot as plt
 from statsmodels.tsa.arima.model import ARIMA
 
 
-#locale.setlocale(locale.LC_ALL, 'en_US.utf-8')
+
 st.set_page_config(page_title="Athena", page_icon=":bar_chart:",layout="wide")
 
 
@@ -316,10 +315,10 @@ def color_styling(val, col_name):
 forecast_table = pd.concat([sbc, bc], axis=0)
 
 # Function to format numbers with commas and two decimal places
+
 def format_numbers(val):
     if isinstance(val, (int, float)):
-        locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')  # Set locale to US for comma separators
-        return locale.format_string("%.2f", val, grouping=True)  # Format with two decimal places and commas for thousands
+        return "{:,.2f}".format(val)  # Format with two decimal places and commas for thousands
     return val
 
 # Apply the combined styling function to the DataFrame

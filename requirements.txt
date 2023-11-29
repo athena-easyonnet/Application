@@ -5,4 +5,4 @@ plotly== 5.18.0
 streamlit==1.28.0 
 statsmodels==0.14.0 
 matplotlib==3.8.2
-locale==0.0.2
+
